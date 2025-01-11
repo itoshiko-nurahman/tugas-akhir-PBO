@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainWindowController">
+   <children>
+      <Pane layoutX="0" layoutY="0" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="lblResult" alignment="CENTER_RIGHT" layoutX="20.0" layoutY="40.0" prefHeight="100.0" prefWidth="360.0" text="0" textFill="#7FDBCA" style="-fx-font-size: 72px; -fx-font-weight: bold;">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+            </Label>
+
+            <GridPane layoutX="0" layoutY="160" prefHeight="440.0" prefWidth="400.0" vgap="5" hgap="5">
+               <children>
+                  <!-- Row 1 -->
+                  <Pane fx:id="btnDel" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #E06C75; -fx-background-radius: 10;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="Del" textFill="WHITE" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnSqrt" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="√" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnPower" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="^2" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnMultiply" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="*" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+
+                  <!-- Row 2 -->
+                  <Pane fx:id="btn1" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="1" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn2" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="2" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn3" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="3" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnDivide" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="/" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+
+                  <!-- Row 3 -->
+                  <Pane fx:id="btn4" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="4" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn5" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="5" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn6" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="6" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnMinus" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="-" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+
+                  <!-- Row 4 -->
+                  <Pane fx:id="btn7" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="7" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn8" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="8" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn9" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="9" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnPlus" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="+" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+
+                  <!-- Row 5 -->
+                  <Pane fx:id="btnDot" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="." textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="95.0" style="-fx-background-color: #282C34; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="95.0" prefHeight="100.0" text="0" textFill="#7FDBCA" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnEquals" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="195.0" style="-fx-background-color: #E06C75; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                     <children>
+                        <Label alignment="CENTER" prefWidth="195.0" prefHeight="100.0" text="=" textFill="WHITE" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
